@@ -17,7 +17,7 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://coursemaker_1128:Azamat123@database.fjavu3b.mongodb.net/?appName=test';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://coursemaker_1128:Azamat123@database.fjavu3b.mongodb.net/?appName=Database';
 const JWT_SECRET = process.env.JWT_SECRET || '****';
 
 app.use(cors());
