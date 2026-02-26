@@ -17,16 +17,11 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-
-// ⚠️ DIQQAT: <db_password> ni o'zingizning haqiqiy MongoDB parolingiz bilan almashtiring!
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://Aslbek:<db_password>@database.fjavu3b.mongodb.net/?appName=Database';
-const JWT_SECRET = process.env.JWT_SECRET || 'secret_key';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://coursemaker_1128:Azamat123@database.fjavu3b.mongodb.net/?appName=test';
+const JWT_SECRET = process.env.JWT_SECRET || '****';
 
 app.use(cors());
 app.use(express.json());
-
-// --- MODELS ---
-
 const userSchema = new mongoose.Schema({
   role: { type: String, required: true },
   name: { type: String, required: true },
